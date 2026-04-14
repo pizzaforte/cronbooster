@@ -3,6 +3,7 @@ name: Cron Booster Backup
 on:
   schedule:
     - cron: '* * * * *'
+  workflow_dispatch:
 
 jobs:
   ping:
