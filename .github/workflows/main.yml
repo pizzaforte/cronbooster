@@ -2,7 +2,7 @@ name: Cron Booster Backup
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
