@@ -1,0 +1,13 @@
+name: Cron Booster Backup
+
+on:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call cron booster
+        run: |
+          curl -s "https://1000volt.hu/transport/cron-booster.php?t=1000volttoken"
